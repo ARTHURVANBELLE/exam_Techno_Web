@@ -1,0 +1,25 @@
+<!-- listeTelevisions.ejs -->
+<head>
+  <meta charset="UTF-8">
+  <title>Traduction</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<h1>Test yourself</h1>
+<p class="correctAns"><%= correctAns %><%= goodAnswer %></p>
+
+
+<h2>How do you say : <%= randomWord %> ?</h2>
+
+<form action="/verify" method="POST">
+  <input name="answer" placeholder="answer" />
+
+  <input type="submit" />
+</form>
+<br>
+<br>
+<form action="/change2" method="POST">
+  <input type="submit" name="menu" />
+</form>
+
+
